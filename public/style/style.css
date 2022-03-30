@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@300&family=Playfair+Display&family=Roboto+Condensed&family=Roboto:wght@100;500&family=Yanone+Kaffeesatz:wght@300&display=swap");
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --my-gray: #484f59;
+  --my-mid-gray: #d1d1d1;
+  --my-light-gray: #f6f6f8;
+  --my-orange: #fdb455;
+  --my-light-red: #cc574a;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to left top, cadetblue, rgb(95, 112, 160));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#App {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+}
+
+@media (max-width: 575px) {
+  #App {
+    border-radius: 0rem;
+  }
+}
+
+.header {
+  background: #68727c;
+  background-position: inherit;
+}
+
+#name-heading {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+h3 {
+  font-family: "Dosis", sans-serif;
+}
+
+#header-icons :nth-child(1) {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+  transform: rotate(20deg);
+}
+#header-icons :nth-child(2) {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+  transform: rotate(-5deg);
+}
+#header-icons :nth-child(3) {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: white;
+  transform: rotate(5deg);
+}
+
+#header-icons :nth-child(4) {
+  font-size: 1rem;
+  margin: 2rem;
+  color: white;
+  transform: rotate(5deg);
+}
+
+#header-icons i {
+  transition: 1s;
+}
+
+#header-icons:hover i {
+  transition: 1s;
+  transform: rotate(15deg);
+}
+
+.footer {
+  height: 2rem;
+}
+
+.header .header-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.content-section,
+.space-section {
+  background-color: var(--my-light-gray);
+}
+.sidebar-section {
+  background-color: var(--my-gray);
+}
+
+#avatar-img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.25rem solid white;
+}
+
+.progress-bar {
+  transition: 3s;
+}
+
+.skill-box__progress:hover :last-child:last-child:nth-child(1) {
+  background-color: var(--my-orange);
+  transition: width 2s;
+  width: 100% !important;
+}
+
+.sidebar {
+  color: white;
+}
+
+.sidebar__item {
+  border-top: 1px solid white;
+}
+
+.sidebar__contact,
+.sidebar-social {
+  text-decoration: none;
+  color: white;
+}
+.sidebar-contact:hover {
+  color: white;
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.sidebar-social:hover {
+  color: white;
+  cursor: pointer;
+  background-color: var(--my-light-red);
+}
+
+.content-header {
+  font-family: "Playfair Display", serif;
+  border-bottom: 1.5px solid #484f59;
+  border-top: 1.5px solid #484f59;
+}
+.content-header h2 {
+  color: var(--my-gray);
+  text-transform: uppercase;
+}
+
+.sidebar-header {
+  border-top: 0;
+  font-family: "Playfair Display", serif;
+}
+.sidebar-header.border-top {
+  border-top: 1px solid white;
+  font-family: "Playfair Display", serif;
+}
+
+.item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.item-text__heading {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+.item-text__link {
+  font-weight: 100;
+  font-size: 13px;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.item-text__small {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.item-text__italic {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.item-icon {
+  width: 50px;
+  font-size: 40px;
+  font-weight: initial;
+}
+
+.expertise-item {
+  transition: 0.2s;
+}
+
+.expertise-item:hover {
+  color: var(--my-light-red);
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.hobby-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  background: cadetblue;
+  transition: 0.2s;
+}
+
+.hobby-box:hover {
+  background: var(--my-orange);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.bg-cadet {
+  background: cadetblue;
+}
+.experience_list {
+  border-left: 0.5px solid cadetblue;
+}
+.experience_icon_box .icon {
+  font-size: 20px;
+  margin-left: -30.5px;
+  color: cadetblue;
+}
+
+.experince__item {
+  padding: 1rem;
+}
+.experince__item:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+.experince__item:hover .icon {
+  color: white;
+}
