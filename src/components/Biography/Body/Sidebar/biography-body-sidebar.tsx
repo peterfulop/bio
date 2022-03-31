@@ -18,8 +18,8 @@ export default function BiographyBodySidebar() {
       />
       <Educations educations={bioData.education} />
       <Languages languages={bioData.languages} />
-      <Contacts contacts={bioData.contacts} />
       <Expertise expertise={bioData.expertise} />
+      <Contacts contacts={bioData.contacts} />
       <Hobbies hobbies={bioData.hobbies} />
       <Socials social={bioData.social} />
     </section>

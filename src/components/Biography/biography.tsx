@@ -3,7 +3,6 @@ import BiographyHeader from "./Header/biography-header";
 import BiographyBody from "./Body/biography-body";
 import DataContext from "../../contexts/data.context";
 import "./biography.css";
-import BiographyFooter from "./Footer/biography-footer";
 
 export default function Biography() {
   const bioData = useContext(DataContext);
@@ -16,7 +15,6 @@ export default function Biography() {
         position={bioData.personals?.position}
       />
       <BiographyBody />
-      <BiographyFooter techStack={bioData.techStack} />
     </Fragment>
   );
 }

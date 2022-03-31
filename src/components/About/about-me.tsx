@@ -12,7 +12,9 @@ export default function AboutMe(props: {
     <div className="content__item mb-4">
       <ContentHeader title={props.headerText} />
       <div className="content__about-me">
-        <div className="content-text">{contentWithAge}</div>
+        <div className="content-text">
+          <p>{contentWithAge}</p>
+        </div>
       </div>
     </div>
   );

@@ -22,3 +22,19 @@
   margin-right: 2rem;
   padding: 0.5rem;
 }
+
+#avatar-img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.25rem solid white;
+}
+
+@media (max-width: 450px) {
+  #avatar-img {
+    width: 100px;
+    height: 100px;
+  }
+}

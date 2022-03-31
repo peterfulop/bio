@@ -152,17 +152,11 @@ export const bioData: Biography = {
     },
   ],
   softSkills: [
-    "kitartás",
-    "önállóság",
+    "kreativitás",
     "precizitás",
     "igényesség",
-    "kommunikáció",
-    "kreativitás",
     "szakmaiság",
-    "csapatmuna",
-    "erős teherbírás",
-    "segítőkészség",
-    "önállóság",
+    "kitartás",
   ],
   experience: [
     {
