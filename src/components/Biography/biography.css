@@ -7,3 +7,7 @@
   padding: 1rem;
   background-color: var(--my-gray);
 }
+
+.content-text {
+  text-align: justify;
+}

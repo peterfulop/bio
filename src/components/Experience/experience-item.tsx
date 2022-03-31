@@ -21,7 +21,10 @@ export default function ExperienceItem(props: {
       </div>
       <div className="experience__content">
         <h5>
-          {props.experience.position} / {props.experience.title}
+          {props.experience.position}
+          {props.experience.title.length > 0
+            ? ` / ${props.experience.title}`
+            : ""}
         </h5>
         <p className="item-text__small mb-3">
           {props.experience.company} | {props.experience.institute} |{" "}

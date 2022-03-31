@@ -130,6 +130,7 @@ h3 {
 }
 
 .item-text__italic {
+  text-align: justify;
   font-size: 16px;
   font-style: italic;
 }

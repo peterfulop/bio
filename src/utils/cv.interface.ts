@@ -37,7 +37,7 @@ export type Exprerience = {
   institute: string;
   location: string;
   from: number;
-  to: number;
+  to: number | string;
   text: string;
 };
 

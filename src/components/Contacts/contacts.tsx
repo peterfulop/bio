@@ -5,7 +5,7 @@ import ContactItem from "./contact-item";
 export default function Contacts(props: { contacts: Contact[] }) {
   return (
     <div className="sidebar mx-2">
-      <SidebarHeader title={"Contacts"} />
+      <SidebarHeader title={"Kapcsolat"} />
       {props.contacts.map((contact: Contact, i: number) => {
         return <ContactItem key={i} contact={contact} />;
       })}
