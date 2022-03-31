@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - names: Install and build
+      - name: Install and build
         run: npm install && npm run build
 
       - name: Deploy
