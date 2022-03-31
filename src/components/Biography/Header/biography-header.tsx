@@ -12,7 +12,7 @@ export default function BiographyHeader(props: {
         <h3>{props.level + " " + props.position}</h3>
       </div>
       <div className="biography__header_avatar">
-        <img id="avatar-img" src="../logo192.png" alt="avatar" />
+        <img id="avatar-img" src="./avatar.jpg" alt="avatar" />
       </div>
     </div>
   );

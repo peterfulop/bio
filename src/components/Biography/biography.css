@@ -1,13 +1,9 @@
-/** BIO BODY*/
 .biography__body_content {
   padding: 2rem;
   background-color: var(--my-light-gray);
 }
 
-/** BIO SIDEBAR*/
-
 .biography__body_sidebar {
   padding: 1rem;
-
   background-color: var(--my-gray);
 }
