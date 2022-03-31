@@ -1,14 +1,25 @@
 import { Exprerience } from "../../utils/cv.interface";
 import { FaCircle } from "react-icons/fa";
 
-export default function ExperienceItem(props: { experience: Exprerience }) {
+export default function ExperienceItem(props: {
+  experience: Exprerience;
+  index: number;
+  maxLength: number;
+}) {
+  const firstExpRoadmapClass: string = props.index === 0 ? "feature_road" : "";
+  const lastExpRoadmapClass: string =
+    props.index === props.maxLength - 1 ? "blank_road" : "";
+
   return (
-    <div className="experince__item d-flex mb-1">
-      <div className="experience_icon_box d-flex justify-content-center align-items-center me-3">
-        <FaCircle className="icon" />
+    <div className="experince__item d-flex">
+      <div className="roadmap">
+        <div className={`roadmap_top ${firstExpRoadmapClass}`}></div>
+        <div className="roadmap_center">
+          <FaCircle className="icon" />
+        </div>
+        <div className={`roadmap_bottom ${lastExpRoadmapClass}`}></div>
       </div>
-      <div>
-        {" "}
+      <div className="experience__content">
         <h5>
           {props.experience.position} / {props.experience.title}
         </h5>

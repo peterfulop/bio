@@ -12,6 +12,10 @@ const DataContext = createContext<Biography>({
   skills: [],
   experience: [],
   achivements: [],
+  languages: [],
+  softSkills: [],
+  motivation: "",
+  techStack: [],
 });
 
 export function DataContextProvider(props: { children?: React.ReactNode }) {

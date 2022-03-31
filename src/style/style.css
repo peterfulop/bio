@@ -33,88 +33,15 @@ a {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  margin: 2rem;
   background: linear-gradient(to left top, cadetblue, rgb(95, 112, 160));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-}
-
-#App {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  border-radius: 1rem;
-}
-
-@media (max-width: 575px) {
-  #App {
-    border-radius: 0rem;
-  }
-}
-
-.header {
-  background: #68727c;
-  background-position: inherit;
-}
-
-#name-heading {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  color: white;
 }
 
 h3 {
   font-family: "Dosis", sans-serif;
-}
-
-#header-icons :nth-child(1) {
-  font-size: 1.5rem;
-  margin: 1rem;
-  color: white;
-  transform: rotate(20deg);
-}
-#header-icons :nth-child(2) {
-  font-size: 1.5rem;
-  margin: 1rem;
-  color: white;
-  transform: rotate(-5deg);
-}
-#header-icons :nth-child(3) {
-  font-size: 1.5rem;
-  margin: 1rem;
-  color: white;
-  transform: rotate(5deg);
-}
-
-#header-icons :nth-child(4) {
-  font-size: 1rem;
-  margin: 2rem;
-  color: white;
-  transform: rotate(5deg);
-}
-
-#header-icons i {
-  transition: 1s;
-}
-
-#header-icons:hover i {
-  transition: 1s;
-  transform: rotate(15deg);
-}
-
-.footer {
-  height: 2rem;
-}
-
-.header .header-2 {
-  display: flex;
-  justify-content: center;
 }
 
 .content-section,
@@ -132,16 +59,6 @@ h3 {
   border-radius: 50%;
   object-fit: cover;
   border: 0.25rem solid white;
-}
-
-.progress-bar {
-  transition: 3s;
-}
-
-.skill-box__progress:hover :last-child:last-child:nth-child(1) {
-  background-color: var(--my-orange);
-  transition: width 2s;
-  width: 100% !important;
 }
 
 .sidebar {
@@ -217,9 +134,19 @@ h3 {
   font-style: italic;
 }
 
-.item-icon {
-  width: 50px;
-  font-size: 40px;
+.icon__sm {
+  width: 30px;
+  font-size: 20px;
+  font-weight: initial;
+}
+.icon__md {
+  width: 40px;
+  font-size: 30px;
+  font-weight: initial;
+}
+.icon__lg {
+  width: 60px;
+  font-size: 50px;
   font-weight: initial;
 }
 
@@ -254,24 +181,4 @@ h3 {
 
 .bg-cadet {
   background: cadetblue;
-}
-.experience_list {
-  border-left: 0.5px solid cadetblue;
-}
-.experience_icon_box .icon {
-  font-size: 20px;
-  margin-left: -30.5px;
-  color: cadetblue;
-}
-
-.experince__item {
-  padding: 1rem;
-}
-.experince__item:hover {
-  background-color: cadetblue;
-  color: white;
-}
-
-.experince__item:hover .icon {
-  color: white;
 }

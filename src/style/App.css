@@ -1,0 +1,27 @@
+.App {
+  padding: 3rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.13)
+  );
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .App {
+    border-radius: 0rem;
+    padding: 0rem;
+    background: none;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}

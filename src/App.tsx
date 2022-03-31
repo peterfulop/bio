@@ -1,9 +1,11 @@
 import Biography from "./components/Biography/biography";
 import { DataContextProvider } from "./contexts/data.context";
+import "../src/style/style.css";
+import "./style/App.css";
 
 function App() {
   return (
-    <div id="App" className="container p-5 my-0 my-sm-5">
+    <div className="App container">
       <DataContextProvider>
         <Biography />
       </DataContextProvider>

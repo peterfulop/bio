@@ -1,13 +1,15 @@
 import { Skill } from "../../utils/cv.interface";
+import { GenericIcon } from "../MUI/Icont";
 
 export default function SkillItem(props: { skill: Skill }) {
   return (
-    <div className="content__skills">
-      <div className="skill-box d-flex justify-content-left mb-3">
-        <div className="skill-box__icon item-icon d-flex justify-content-center me-3">
+    <div className="skill col-12 col-sm-6">
+      <div className="skill__item">
+        <div className="skill__item_icon icon__md">
           <i className={props.skill.icon}></i>
+          <GenericIcon key={props.skill.icon} iconName={props.skill.icon} />
         </div>
-        <div className="skill-box__progress w-100">
+        <div className="skill__item_progress">
           <p className="item-text">{props.skill.name}</p>
           <div className="progress">
             <div

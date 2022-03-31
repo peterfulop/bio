@@ -1,8 +1,8 @@
 import { Fragment, useContext } from "react";
-import BiographyHeader from "./biography-header";
-import BiographyBody from "./biography-body";
-
+import BiographyHeader from "./Header/biography-header";
+import BiographyBody from "./Body/biography-body";
 import DataContext from "../../contexts/data.context";
+import "./biography.css";
 
 export default function Biography() {
   const bioData = useContext(DataContext);

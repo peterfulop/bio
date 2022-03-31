@@ -4,7 +4,7 @@ export default function AchivementItem(props: { achivement: Achievement }) {
   return (
     <div className="achivements-element mb-5">
       <div className="achivements-header d-flex justify-content-left mb-3">
-        <div className="item-icon achivements-icon d-flex justify-content-center align-items-center me-3">
+        <div className="icon__md achivements-icon d-flex justify-content-center align-items-center me-2">
           <i className="fas fa-award"></i>
         </div>
         <div className="achivements-text d-flex flex-column justify-content-left">

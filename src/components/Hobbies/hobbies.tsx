@@ -1,5 +1,5 @@
 import { Hobby } from "../../utils/cv.interface";
-import SidebarHeader from "../Sidebar/sidebar-header";
+import SidebarHeader from "../Biography/Body/Sidebar/biography-body-sidebar-header";
 import HobbyItem from "./hobby-item";
 
 export default function Hobbies(props: { hobbies: Hobby[] }) {

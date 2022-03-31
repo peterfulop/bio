@@ -1,4 +1,4 @@
-import SidebarHeader from "../Sidebar/sidebar-header";
+import SidebarHeader from "../Biography/Body/Sidebar/biography-body-sidebar-header";
 import ExpertiseItem from "./expertise-item";
 
 export default function Expertise(props: { expertise: string[] }) {
