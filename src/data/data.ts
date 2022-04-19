@@ -122,7 +122,7 @@ export const bioData: Biography = {
 
     {
       name: "React",
-      force: 30,
+      force: 60,
       icon: "SiReact",
     },
     {
