@@ -130,15 +130,15 @@ export const bioData: Biography = {
       force: 40,
       icon: "SiCsharp",
     },
+        {
+      name: "CSS",
+      force: 65,
+      icon: "SiCss3",
+    },
     {
       name: "Bootstrap",
       force: 60,
       icon: "SiBootstrap",
-    },
-    {
-      name: "CSS",
-      force: 35,
-      icon: "SiCss3",
     },
     {
       name: "HTML",
