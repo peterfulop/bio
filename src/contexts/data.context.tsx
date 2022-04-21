@@ -16,6 +16,7 @@ const DataContext = createContext<Biography>({
   softSkills: [],
   motivation: "",
   techStack: [],
+  projects: [],
 });
 
 export function DataContextProvider(props: { children?: React.ReactNode }) {

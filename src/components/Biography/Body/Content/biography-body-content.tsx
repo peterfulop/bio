@@ -5,6 +5,7 @@ import Achievements from "../../../Achievements/achievements";
 import DataContext from "../../../../contexts/data.context";
 import SoftSkills from "../../../SoftSkills/soft-skills";
 import { useContext } from "react";
+import Projects from "../../../Projects/projects";
 
 export default function BiographyBodyContent() {
   const bioData = useContext(DataContext);
@@ -17,6 +18,7 @@ export default function BiographyBodyContent() {
       />
       <Skills skills={bioData.skills} />
       <SoftSkills softSkills={bioData.softSkills} />
+      <Projects projects={bioData.projects} />
       <Experience experience={bioData.experience} />
       <Achievements achivements={bioData.achivements} />
       <AboutMe

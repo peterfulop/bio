@@ -71,6 +71,12 @@ export type Language = {
   speak: number;
 };
 
+export type Project = {
+  url: string;
+  img: string;
+  title: string;
+};
+
 export type IconNames = keyof typeof icons;
 export interface IGenericIconProps {
   iconName: IconNames;
@@ -90,4 +96,5 @@ export type Biography = {
   softSkills: string[];
   motivation: string;
   techStack: IconNames[];
+  projects: Project[];
 };

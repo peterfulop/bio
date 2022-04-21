@@ -130,7 +130,7 @@ export const bioData: Biography = {
       force: 40,
       icon: "SiCsharp",
     },
-        {
+    {
       name: "CSS",
       force: 65,
       icon: "SiCss3",
@@ -281,5 +281,22 @@ export const bioData: Biography = {
     "SiXampp",
     "SiGitkraken",
     "SiSlack",
+  ],
+  projects: [
+    {
+      title: "Product App",
+      img: "product_app.PNG",
+      url: "https://reactproductapp.web.app/",
+    },
+    {
+      title: "Pizza App",
+      img: "pizza_app.PNG",
+      url: "https://reactpizzaapp.web.app/",
+    },
+    {
+      title: "Quotes App",
+      img: "quote_app.PNG",
+      url: "https://reactquoteproject.web.app/",
+    },
   ],
 };
