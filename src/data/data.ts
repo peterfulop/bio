@@ -284,6 +284,11 @@ export const bioData: Biography = {
   ],
   projects: [
     {
+      title: "Jobify App",
+      img: "job_app.PNG",
+      url: "https://jobify-react-app.herokuapp.com/",
+    },
+    {
       title: "Product App",
       img: "product_app.PNG",
       url: "https://reactproductapp.web.app/",
