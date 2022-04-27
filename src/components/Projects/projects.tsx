@@ -7,7 +7,7 @@ import "./projects.css";
 export default function Projects(props: { projects: Project[] }) {
   return (
     <div className="content__item mb-4">
-      <ContentHeading title={"Projects"} />
+      <ContentHeading title={"Small Projects"} />
       <div className="skills_list d-flex flex-wrap">
         {props.projects.map((project: Project, i: number) => {
           return <ProjectItem key={i} project={project} />;
